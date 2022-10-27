@@ -1,0 +1,44 @@
+@media(max-width: 690px){
+  /* heading */
+  #header .head-master {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #header .welcome {
+    margin-bottom: 2rem;
+  }
+  #header .submenu:hover #shopping-cart {
+    right: -50%;
+    top: 100%;
+  }
+
+  /* section main-bar */
+  #main-bar .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #main-bar .row .title {
+    margin-bottom: 2rem;
+    border-bottom:#333 dotted 1px;
+  }
+  /*  section list of course  */
+  #all-courses .courses {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  /* footer */
+  #contact .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+}

@@ -1,0 +1,22 @@
+/* header */
+#header .submenu:hover #shopping-cart {
+    display: block;
+    position: absolute;
+    right: -50%;
+    top: 100%;
+    z-index: 1;
+    background-color: var(--basket-table-color);
+    padding: 0.5rem;
+    min-width: 300px;
+    min-height: 400px;
+  }
+
+/* section main-bar */
+#main-bar .row .title {
+    display: flex;
+    flex-direction: row;
+}  
+#main-bar .row .title h3 {
+    margin-left: 0.5rem;
+  }
+  

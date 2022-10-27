@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #212529;
+  --secondary-color: #fff;
+  --tertiary-color: #fcca46;
+  --btn-hover-color: #a47e1b;
+  --basket-table-color: #edede9;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+.container {
+  /* margin: 0.5rem  1rem; */
+  padding: 0.5rem;
+}
+/* utilities */
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  margin: 1rem 0 0.5rem 0;
+}
+.btn:hover {
+  background-color: var(--btn-hover-color);
+  color: var(--primary-color);
+}
+
+/* heading */
+#header .head-master {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+#header ul li {
+  list-style: none;
+}
+#header #img-cart {
+  width: 125px;
+}
+
+#header .submenu {
+  position: relative;
+}
+#header .submenu #shopping-cart {
+  display: none;
+}
+#header .submenu:hover #shopping-cart {
+  display: block;
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  z-index: 1;
+  background-color: var(--basket-table-color);
+  padding: 0.5rem;
+  min-width: 300px;
+  min-height: 400px;
+}
+#header table {
+  width: 100%;
+}
+#header table {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/*  section description */
+#des {
+  background-color: var(--tertiary-color);
+  height: 300px;
+  text-align: center;
+}
+#des .des {
+  padding-top: 7rem;
+}
+
+/* section main-bar */
+#main-bar {
+  background-image: linear-gradient(to left, yellow, #ff9e00);
+}
+#main-bar .row {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#main-bar .row .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+#main-bar .row .title h3 {
+  margin-top: 1rem;
+}
+
+/* section list of course */
+#all-courses {
+  text-align: center;
+  background-color: #ff9e00;
+}
+#all-course #heading {
+  margin: 1rem 0;
+}
+#all-courses .courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 0.5rem;
+}
+#all-courses .courses .course {
+  border: var(--tertiary-color) 1px solid;
+  background-color: var(--secondary-color);
+}
+#all-courses .courses .course .img-course {
+  width: 250px;
+}
+#all-courses .info-course .price {
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+#all-courses .info-course span {
+  /* text-decoration: none !important; */
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #212529;
+  color: #fff;
+}
+
+/* footer */
+#contact {
+  text-align: center;
+  /* margin-top: 1rem; */
+  background-color: var(--tertiary-color);
+}
+#contact h2 {
+  margin-top: 0.5rem;
+}
+#contact .boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#contact .box-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#contact .box-contact h3 {
+  padding: 0.5rem;
+}
+#contact a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* button  remove for js */
+.remove,
+.remove:hover {
+  cursor: pointer;
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
